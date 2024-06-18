@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de Estudio</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=>{
+           
+            const htmlCards = document.querySelectorAll('section div');
+            htmlCards.forEach((card, index) => {
+                card.addEventListener('click', ()=>{
+                  
+                });
+            });
+        });
+    </script>
+    <script src="planDeEstudio.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+            <div class="bloque">
+                <div class="numeroBloque">
+                    <h2>I</h2>
+                    <p>IF01002</p>
+                </div>
+                    
+                <div id="ES101" class="asignatura" data-requisitos="ES201">
+                    <h2>ESPAÑOL</h2>
+                    <p>ES101</p>
+                </div>
+
+                <div id="MT101" class="asignatura" data-requisitos="MT201, MT202, FS201, MT204">
+                    <h2>MATEMÁTICAS</h2>
+                    <p>MT101</p>
+                </div>                
+
+                <div id="IF112" class="asignatura" data-requisitos="IF200"> 
+                    <h2>INTRODUCCIÓN A LAS CIENCIAS DE LA COMPUTACIÓN</h2>
+                    <p>	IF112</p>
+                </div>
+                <div id="SC101" class="asignatura" >
+                    <h2>SOCIOLOGÍA</h2>
+                    <p>SC101</p>
+                </div>
+
+                <div id="FI101" class="asignatura" data-requisitos="CR201">
+                    <h2>FILOSOFÍA</h2>
+                    <p>FI101</p>
+                </div>
+
+                <div id="ESVU1" class="asignatura" >
+                    <h2>SEMINARIO DE INICIACIÓN</h2>
+                    <p>ESVU1</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="bloque">
+
+                <div class="numeroBloque">
+                    <h2>II</h2>
+                    <p>IF01002</p>
+                </div>
+                    
+                <div id="ES201" class="asignatura" data-opens="ES101">
+                    <h2>EXPRESION ORAL Y ESCRITA</h2>
+                    <p>ES201</p>
+                </div>
+                <div id="MT201" class="asignatura" data-requisitos="MT303" data-opens="MT101">
+                    <h2>PRE CALCULO</h2>
+                    <p>MT201</p>
+                </div>
+                <div id="IF200" class="asignatura" data-opens="IF112" data-requisitos="IF214, IF213"> 
+                    <h2>FUNDAMENTOS Y LÓGICA DE PROGRAMACIÓN</h2>
+                    <p>	IF200</p>
+                </div>
+                <div id="HS101" class="asignatura" >
+                    <h2>HISTORIA DE HONDURAS</h2>
+                    <p>HS101</p>
+                </div>
+                <div id="CR201" class="asignatura" data-opens="FI101" data-requisitos="FI501">
+                    <h2>EL HOMBRE FRENTE A LA VIDA</h2>
+                    <p>CR201</p>
+                </div>
+                <div id="IDN1" class="asignatura" data-requisitos="IDIN2">
+                    <h2>INGLÉS PRINCIPIANTE</h2>
+                    <p>IDN1</p>    
+                </div>
+                <div id="ESPF" class="asignatura" >
+                    <h2>RETIRO DE PADRES DE FAMILIA</h2>
+                    <p>ESPF1</p>    
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="bloque">
+                <div class="numeroBloque">
+                    <h2>III</h2>
+                    <p>IF01002</p>
+                </div>
+                    
+                <div id="MT202" class="asignatura" data-requisitos="AD302" data-opens="MT101">
+                    <h2>ESTADISTICA I</h2>
+                    <p>MT202</p>
+                </div>
+                <div id="MT303" class="asignatura" data-requisitos="MT401" data-opens="MT201">
+                    <h2>CALCULO I</h2>
+                    <p>MT303</p>
+                </div>
+                <div id="IF214" class="asignatura" data-opens="IF200" data-requisitos="IF303"> 
+                    <h2>PROGRAMACIÓN ESTRUCTURADA I</h2>
+                    <p>	IF214</p>
+                </div>
+                <div id="IF213" class="asignatura" >
+                    <h2>ESTRUCTURAS DISCRETAS</h2>
+                    <p>IF213</p>
+                </div>
+                <div id="IDIN2" class="asignatura" data-opens="IDN1" data-requisitos="IDIN3">
+                    <h2>INGLÉS INTERMEDIO BAJO</h2>
+                    <p>IDIN2</p>
+                </div>
+                <div id="IF394" class="asignatura" data-requisitos="IDN2">
+                    <h2>DISEÑO GRÁFICO</h2>
+                    <p>IF394</p>    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bloque">
+                <div class="numeroBloque">
+                    <h2>IV</h2>
+                    <p>IF01002</p>
+                </div>
+                    
+                <div id="AD302" class="asignatura" data-opens="MT202">
+                    <h2>MÉTODOS Y TÉCNICAS DE LA INVESTIGACIÓN</h2>
+                    <p>AD302</p>
+                </div>
+                <div id="MT401" class="asignatura" data-opens="MT303">
+                    <h2>CALCULO II</h2>
+                    <p>MT401</p>
+                </div>
+                <div id="IF303" class="asignatura" data-opens="IF214" data-requisitos="IF325"> 
+                    <h2>PROGRAMACIÓN ESTRUCTURADA II</h2>
+                    <p>	IF303</p>
+                </div>
+                <div id="FS201" class="asignatura" data-opens="MT101" data-requisitos="IF319">
+                    <h2>FÍSICA</h2>
+                    <p>FS201</p>
+                </div>
+                <div id="AD101" class="asignatura">
+                    <h2>ADMINISTRACIÓN</h2>
+                    <p>AD101</p>
+                </div>
+                <div id="IDIN3" class="asignatura" data-opens="IDIN2" data-requisitos="IDIN4">
+                    <h2>INGLÉS INTERMEDIO ALTO</h2>
+                    <p>IDIN3</p>    
+                </div>
+                <div id="CNFS1" class="asignatura" >
+                    <h2>LABORATORIO DE FÍSICA I</h2>
+                    <p>CNFS1</p>    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bloque">
+                <div class="numeroBloque">
+                    <h2>V</h2>
+                    <p>IF01002</p>
+                </div>
+                    
+                <div id="IF322" class="asignatura" data-requisitos="IF327">
+                    <h2>BASE DE DATOS I</h2>
+                    <p>IF322</p>
+                </div>
+                <div id="CT201" class="asignatura">
+                    <h2>CONTABILIDAD</h2>
+                    <p>CT201</p>
+                </div>
+                <div id="IF325" class="asignatura" data-opens="IF303"> 
+                    <h2>PROGRAMACIÓN EN ENTORNOS DE DESARROLLO VISUAL</h2>
+                    <p>	IF325</p>
+                </div>
+                <div id="IF319" class="asignatura" data-opens="IF201" data-requisitos="IF324">
+                    <h2>PRINCIPIOS DE ELECTRÓNICA</h2>
+                    <p>IF319</p>
+                </div>
+                <div id="MT204" class="asignatura" data-opens="MT101">
+                    <h2>MATEMÁTICA FINANCIERA</h2>
+                    <p>MT204</p>
+                </div>
+                <div id="IDIN4" class="asignatura" data-opens="IDIN3" data-requisitos="IDIN5">
+                    <h2>INGLÉS AVANZADO</h2>
+                    <p>IDIN4</p>    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bloque">
+                <div class="numeroBloque">
+                    <h2>VI</h2>
+                    <p>IF01002</p>
+                </div>
+                    
+                <div id="IF327" class="asignatura" data-opens="IF322" data-requisitos="IF342">
+                    <h2>BASE DE DATOS II</h2>
+                    <p>IF327</p>
+                </div>
+                <div id="FI501" class="asignatura" data-requisitos="CR501" data-opens="CR201">
+                    <h2>ÉTICA PROFESIONAL</h2>
+                    <p>FI501</p>
+                </div>
+                <div id="IF212" class="asignatura" data-requisitos="IF314"> 
+                    <h2>ANÁLISIS Y DISEÑO DE SISTEMAS</h2>
+                    <p>	IF212</p>
+                </div>
+                <div id="IF323" class="asignatura" data-requisitos="IF328">
+                    <h2>REDES I</h2>
+                    <p>IF323</p>
+                </div>
+                <div id="IF324" class="asignatura" data-opens="IF319" data-requisitos="IF329">
+                    <h2>CIRCUITOS LÓGICOS</h2>
+                    <p>IF324</p>
+                </div>
+                <div id="IDIN5" class="asignatura" data-opens="IDIN4" data-requisitos="IDIN6">
+                    <h2>INGLÉS VOCACULARIO Y LECTURA TÉCNICA</h2>
+                    <p>IDIN5</p>    
+                </div>
+                <div id="ESVU2" class="asignatura">
+                    <h2>SEMINARIO DE MADUREZ EN LA VIDA UNIVERSITARIA</h2>
+                    <p>ESVU2</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bloque">
+                <div class="numeroBloque">
+                    <h2>VII</h2>
+                    <p>IF01002</p>
+                </div>
+                    
+                <div id="IF342" class="asignatura" data-opens="IF327" data-requisitos="IF391">
+                    <h2>BASE DE DATOS MULTIDIMENSIONAL</h2>
+                    <p>IF342</p>
+                </div>
+                <div id="IF340" class="asignatura" data-requisitos="IF353">
+                    <h2>PROGRAMACIÓN MULTIPLATAFORMA</h2>
+                    <p>IF340</p>
+                </div>
+                <div id="IF314" class="asignatura" data-opens="IF212" data-requisitos="IF346"> 
+                    <h2>DESARROLLO DE SOFTWARE</h2>
+                    <p>	IF314</p>
+                </div>
+                <div id="IF328" class="asignatura" data-opens="IF323">
+                    <h2>REDES II</h2>
+                    <p>IF328</p>
+                </div>
+                <div id="IF329" class="asignatura" data-opens="IF324">
+                    <h2>SISTEMAS AUTOMATIZADOS</h2>
+                    <p>IF329</p>
+                </div>
+                <div id="IDIN6" class="asignatura" data-opens="IDIN5">
+                    <h2>INGLÉS COMPOSICIÓN Y CONVERSACIÓN</h2>
+                    <p>IDIN6</p>    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bloque">
+                <div class="numeroBloque">
+                    <h2>VIII</h2>
+                    <p>IF01002</p>
+                </div>
+                    
+                <div id="IF391" class="asignatura" data-opens="IF342">
+                    <h2>SISTEMAS INTELIGENTES PARA NEGOCIOS</h2>
+                    <p>IF391</p>
+                </div>
+                <div id="IF346" class="asignatura" data-opens="IF314">
+                    <h2>IMPLEMENTACION DE SISTEMAS DE SOFTWARE</h2>
+                    <p>IF346</p>
+                </div>
+                <div id="IF345" class="asignatura" data-requisitos="IF352"> 
+                    <h2>SISTEMAS OPERATIVOS I</h2>
+                    <p>	IF345</p>
+                </div>
+                <div id="IF370" class="asignatura" data-requisitos="IF381">
+                    <h2>MICROCONTROLADORES</h2>
+                    <p>IF370</p>
+                </div>
+                <div id="BG205" class="asignatura">
+                    <h2>ECOLOGÍA</h2>
+                    <p>BG205</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bloque">
+                <div class="numeroBloque">
+                    <h2>IX</h2>
+                    <p>IF01002</p>
+                </div>
+                    
+                <div id="IF353" class="asignatura" data-opens="IF340" data-requisitos="IF357">
+                    <h2>DESARROLLO DE PORTALES WEB I</h2>
+                    <p>IF353</p>
+                </div>
+                <div id="IF351" class="asignatura" data-requisitos="IF355">
+                    <h2>PROGRAMACIÓN MÓVIL I</h2>
+                    <p>IF351</p>
+                </div>
+                <div id="AD104" class="asignatura" data-requisitos="MT304"> 
+                    <h2>GESTIÓN DE LA CALIDAD</h2>
+                    <p>AD104</p>
+                </div>
+                <div id="IF352" class="asignatura" data-opens="IF345">
+                    <h2>SISTEMAS OPERATIVOS II</h2>
+                    <p>IF352</p>
+                </div>
+                <div id="IF381" class="asignatura">
+                    <h2>SEMINARIO DE HARDWARE Y ELECTRICIDAD</h2>
+                    <p>IF381</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bloque">
+                <div class="numeroBloque">
+                    <h2>X</h2>
+                    <p>IF01002</p>
+                </div>
+                    
+                <div id="IF357" class="asignatura" data-opens="IF353" data-requisitos="IF362">
+                    <h2>DESARROLLO DE PORTALES WEB II</h2>
+                    <p>IF357</p>
+                </div>
+                <div id="IF355" class="asignatura" data-opens="IF351">
+                    <h2>PROGRAMACIÓN MÓVIL II</h2>
+                    <p>IF355</p>
+                </div>
+                <div id="MT304" class="asignatura" data-opens="AD104" data-requisitos="AD402"> 
+                    <h2>CONTROL ESTADÍSTICO DE LA CALIDAD</h2>
+                    <p>MT304</p>
+                </div>
+                <div id="IF356" class="asignatura" data-requisitos="IF360, IF358">
+                    <h2>GESTIÓN Y ESTANDARES DE TECNOLOGÍA DE INFORMACIÓN</h2>
+                    <p>IF356</p>
+                </div>
+                <div id="CR501" class="asignatura" data-opens="FI501" data-requisitos="FMTS1">
+                    <h2>DOCTRINA SOCIAL DE LA IGLESIA</h2>
+                    <p>CR501</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bloque">
+                <div class="numeroBloque">
+                    <h2>XI</h2>
+                    <p>IF01002</p>
+                </div>
+                    
+                <div id="IF362" class="asignatura" data-opens="IF357" data-requisitos="IF361">
+                    <h2>NEGOCIOS WEB</h2>
+                    <p>IF362</p>
+                </div>
+                <div id="IF347" class="asignatura" data-requisitos="IF392">
+                    <h2>PROGRAMACIÓN DE NEGOCIOS</h2>
+                    <p>IF347</p>
+                </div>
+                <div id="AD402" class="asignatura" data-opens="MT304"> 
+                    <h2>PLANEACIÓN Y DISEÑO DE UN MODELO DE LA CALIDAD</h2>
+                    <p>AD402</p>
+                </div>
+                <div id="IF360" class="asignatura" data-opens="IF356" data-requisitos="IF380">
+                    <h2>SEGURIDAD INFORMÁTICA Y GESTIÓN DE RIESGO</h2>
+                    <p>IF360</p>
+                </div>
+                <div id="IF358" class="asignatura" data-opens="IF356">
+                    <h2>ADMINISTRACIÓN DE CENTROS DE COMPUTO</h2>
+                    <p>IF358</p>
+                </div>
+                <div id="FMTS1" class="asignatura" data-opens="CR501">
+                    <h2>TRABAJO EDUCATIVO SOCIAL</h2>
+                    <p>FMTS1</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bloque">
+                <div class="numeroBloque">
+                    <h2>XII</h2>
+                    <p>IF01002</p>
+                </div>
+                    
+                <div id="IF361" class="asignatura" data-opens="IF362">
+                    <h2>SEMINARIO-TALLER DE SOFTWARE</h2>
+                    <p>IF361</p>
+                </div>
+                <div id="IF392" class="asignatura" data-opens="IF347">
+                    <h2>GESTIÓN DE PROYECTOS INFORMÁTICOS</h2>
+                    <p>IF392</p>
+                </div>
+                <div id="IF350" class="asignatura" data-opens="IF391"> 
+                    <h2>BIG DATA</h2>
+                    <p>IF350</p>
+                </div>
+                <div id="IF380" class="asignatura" data-opens="IF360">
+                    <h2>AUDITORÍA DE SISTEMAS DE INFORMACIÓN</h2>
+                    <p>IF380</p>
+                </div>
+                <div id="IF393" class="asignatura">
+                    <h2>EXCEL AVANZADO PARA INGENIERIAS</h2>
+                    <p>IF393</p>
+                </div>
+                <div id="IF395" class="asignatura">
+                    <h2>INVESTIGACIÓN TECNOLÓGICA</h2>
+                    <p>IF395</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bloque">
+                <div class="numeroBloque">
+                    <h2>XIII</h2>
+                    <p>IF01002</p>
+                </div>
+                    
+                <div id="IF400" class="asignatura">
+                    <h2>PRÁCTICA PROFESIONAL SUPERVISADA</h2>
+                    <p>IF400</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; Derechos Reservado 2010-2020 </p>
+        </footer>
+    </body>
+    </html>
